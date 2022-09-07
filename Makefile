@@ -27,5 +27,6 @@ test1:
 	g++ -o cwe_457.o cwe_457.cpp
 	g++ -o cwe_476.o cwe_476.cpp
 	g++ -o cwe_665.o cwe_665.cpp
+	g++ -o two_cwe.o two_cwe.cpp
 clean:
 	rm cwe_*.o
