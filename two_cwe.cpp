@@ -1,8 +1,12 @@
 #include<cstring>
 #define BUFSIZE 10
 
-int sql_inj(){
- char cat[] = "cat ";
+
+
+int main(int argc, char **argv) {
+char buf[BUFSIZE];
+buf[11]='a';
+char cat[] = "cat ";
     char *command;
     size_t commandLength;
 
@@ -12,11 +16,4 @@ int sql_inj(){
     strncat(command, argv[1], (commandLength - strlen(cat)));
 
     system(command);
-    return (0); 
-}
-
-int main(int argc, char **argv) {
-char buf[BUFSIZE];
-buf[11]='a';
-  sql_inj();
 }
