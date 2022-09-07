@@ -1,4 +1,8 @@
 #include<cstring>
+#include <stdio.h>
+#include <unistd.h>
+#include <string.h>
+#include <stdlib.h>
 #define BUFSIZE 10
 
 
